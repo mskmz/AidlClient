@@ -27,12 +27,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
 
-    private lateinit var service: IServiceManager;
+    private lateinit var service: IServiceManagerKt;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        service = IServiceManager(this)
+        service = IServiceManagerKt(this)
         btn_cmd_1.setOnClickListener(this)
         btn_cmd_2.setOnClickListener(this)
         btn_cmd_3.setOnClickListener(this)

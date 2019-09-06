@@ -5,7 +5,7 @@ import android.util.Log;
 
 import com.wzk.aidlclient.constance.CmdConstance;
 
-public class ICallBackBinder extends com.wzk.aidlservice.ICallBack.Stub {
+public class ICallBackBinder extends com.wzk.aidlclient.ICallBack.Stub {
 
     //---------------DEBUG配置-------------------------------------------------------
     private static final String TAG = "ICallBackBinder";
