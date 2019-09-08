@@ -7,4 +7,5 @@ public class CmdConstance {
     public static final int CMD_4 = 4;
     public static final int CMD_5 = 5;
     public static final int CMD_6 = 6;
+
 }

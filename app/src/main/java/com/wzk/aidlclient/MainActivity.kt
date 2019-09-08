@@ -1,10 +1,8 @@
 package com.wzk.aidlclient
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.wzk.aidlclient.constance.CmdConstance
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -27,7 +25,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
 
-    private lateinit var service: IServiceManagerKt;
+    private lateinit var service: IServiceManagerKt
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,17 +37,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btn_cmd_4.setOnClickListener(this)
         btn_cmd_5.setOnClickListener(this)
         btn_cmd_6.setOnClickListener(this)
-    }
-
-    fun resolve(cmd: Int) {
-        when (cmd) {
-            CmdConstance.CMD_1 -> Log.d(LogConfig.TAG, "CMD_1")
-            CmdConstance.CMD_2 -> Log.d(LogConfig.TAG, "CMD_2")
-            CmdConstance.CMD_3 -> Log.d(LogConfig.TAG, "CMD_3")
-            CmdConstance.CMD_4 -> Log.d(LogConfig.TAG, "CMD_4")
-            CmdConstance.CMD_5 -> Log.d(LogConfig.TAG, "CMD_5")
-            CmdConstance.CMD_6 -> Log.d(LogConfig.TAG, "CMD_6")
-        }
     }
 
 
