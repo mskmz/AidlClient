@@ -9,12 +9,12 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(p0: View?) {
         when (p0) {
-            btn_cmd_1 -> service.cmd1()
-            btn_cmd_2 -> service.cmd2()
-            btn_cmd_3 -> service.cmd3()
-            btn_cmd_4 -> service.cmd4()
-            btn_cmd_5 -> service.cmd5()
-            btn_cmd_6 -> service.cmd6()
+            btn_cmd_1 -> Thread(Runnable { service.cmd1() }).start()
+            btn_cmd_2 -> Thread(Runnable { service.cmd2() }).start()
+            btn_cmd_3 -> Thread(Runnable { service.cmd3() }).start()
+            btn_cmd_4 -> Thread(Runnable { service.cmd4() }).start()
+            btn_cmd_5 -> Thread(Runnable { service.cmd5() }).start()
+            btn_cmd_6 -> Thread(Runnable { service.cmd6() }).start()
         }
     }
     //---------------DEBUG配置-------------------------------------------------------
