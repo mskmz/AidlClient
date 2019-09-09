@@ -1,6 +1,5 @@
-package com.wzk.aidlclient;
+package com.wzk.aidlclient.java;
 
-import android.app.Application;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;

@@ -1,4 +1,4 @@
-package com.wzk.aidlclient;
+package com.wzk.aidlclient.java;
 
 import android.os.RemoteException;
 import android.util.Log;

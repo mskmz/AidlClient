@@ -3,6 +3,7 @@ package com.wzk.aidlclient
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.wzk.aidlclient.kotlin.IServiceManagerKt
 import kotlinx.android.synthetic.main.activity_main.*
 
 

@@ -1,11 +1,17 @@
-package com.wzk.aidlclient
+package com.wzk.aidlclient.kotlin
 
 import android.os.RemoteException
 import android.util.Log
+import com.wzk.aidlclient.ICallBack
 import com.wzk.aidlclient.constance.CmdConstance
 
 
 class ICallBackBinderKt : ICallBack.Stub() {
+    companion object {
+        //---------------DEBUG配置-------------------------------------------------------
+        private const val TAG = "ICallBackBinder"
+        private const val DEBUG = true
+    }
 
     @Throws(RemoteException::class)
     override fun onCallBack(cmd: Int) {
@@ -20,9 +26,4 @@ class ICallBackBinderKt : ICallBack.Stub() {
         }
     }
 
-    companion object {
-        //---------------DEBUG配置-------------------------------------------------------
-        private val TAG = "ICallBackBinder"
-        private val DEBUG = true
-    }
 }

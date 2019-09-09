@@ -1,4 +1,4 @@
-package com.wzk.aidlclient
+package com.wzk.aidlclient.kotlin
 
 import android.content.ComponentName
 import android.content.Context
